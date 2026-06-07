@@ -10,10 +10,10 @@ from telegram.ext import (
     ContextTypes,
     filters
 )
+
 import os
 
-BOT_TOKEN = os.getenv("7880694341:AAHvgYnOm1J0uMNKqjzIKV0xcjkOT0xBkmE")
-
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
